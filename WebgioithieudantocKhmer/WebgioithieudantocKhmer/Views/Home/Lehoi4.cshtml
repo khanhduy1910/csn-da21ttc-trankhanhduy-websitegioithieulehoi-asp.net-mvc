@@ -1,0 +1,104 @@
+﻿
+@{
+    ViewBag.Title = "Lễ Chôl Vôsa";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    h3 {
+        text-align: center;
+        text-transform: none;
+    }
+
+    p {
+        padding: 1rem;
+        text-indent: 62px;
+        margin: 38px;
+        font-size: 1em;
+        line-height: 24px;
+        color: var(--font-color);
+        font-family: 'Poppins', sans-serif;
+    }
+
+    h4 {
+        text-indent: 100px;
+    }
+
+    h5 {
+        text-align: center;
+    }
+
+    img {
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .wp-caption p.wp-caption-text {
+        text-align: center;
+        margin: 0;
+        padding: 6px;
+        font-weight: 400;
+        font-style: italic;
+        line-height: 18px;
+    }
+</style>
+<section class="w3l-about-breadcrumb position-relative text-center">
+    <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
+        <div class="container py-lg-5 py-3">
+        </div>
+    </div>
+</section>
+
+<h3 class="hny-title">
+    Lễ Chôl Vôsa
+</h3>
+<h4>Thông tin lễ hội</h4>
+<p>
+    Lễ Chôl Vôsa, hay còn gọi là Lễ Nhập hạ. Đây là một lễ hội quan trọng được tổ chức hàng năm vào ngày 15 tháng 6 âm lịch. Người Khmer tổ chức lễ này với mục đích cầu cho mưa thuận gió hòa, quốc thái dân an, gia đình yên vui hạnh phúc. Lễ này cũng là dịp bà con dâng các vật dụng sinh hoạt cho các sư sãi trong Chùa.<br />
+    &emsp;&emsp;&emsp;&emsp;Lễ Chôl Vôsa diễn ra trong 3 tháng (từ 15/6 - 15/9 âm lịch), nhưng những hoạt động quan trọng chỉ được thực hiện trong 2 ngày chính.<br />
+    &emsp;&emsp;&emsp;&emsp;- Ngày thứ nhất diễn ra vào buổi chiều, bà con sẽ đem lễ vật đến Chùa để làm lễ. Người ta thắp những cây nến rất lớn ở trong Chùa, làm những ngôi Chùa trở nên lung linh và huyền ảo.<br />
+    &emsp;&emsp;&emsp;&emsp;- Ngày thứ hai, mọi người đem cơm, nước, gạo,... đến Chùa dâng lên các sư để cầu siêu thoát cho người quá cố và cầu cho gia đình bình an, hạnh phúc.<br />
+    &emsp;&emsp;&emsp;&emsp;Lễ Nhập Hạ diễn ra trong 3 tháng mùa mưa, thuận lợi cho việc nuôi trồng và cầy cấy. Lễ hội này cũng được coi là lễ thuần nông gắn với tư tưởng Phật giáo, phù hợp với văn hóa truyền thống của người Khmer Nam Bộ.
+</p>
+div style="width: 1520px;" class="wp-caption aligncenter">
+<img src="~/images/Lễ Chôl Vôsa-lh.jpg" alt="Lễ Nhập hạ">
+<p class="wp-caption-text">Đối với người Khmer, Lễ Nhập Hạ vô cung quan trọng</p>
+</div>
+<script>
+    $(function () {
+        $('.navbar-toggler').click(function () {
+            $('body').toggleClass('noscroll');
+        })
+    });
+</script>
+<!-- disable body scroll which navbar is in active -->
+<!--/MENU-JS-->
+<script>
+    $(window).on("scroll", function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 80) {
+            $("#site-header").addClass("nav-fixed");
+        } else {
+            $("#site-header").removeClass("nav-fixed");
+        }
+    });
+
+    //Main navigation Active Class Add Remove
+    $(".navbar-toggler").on("click", function () {
+        $("header").toggleClass("active");
+    });
+    $(document).on("ready", function () {
+        if ($(window).width() > 991) {
+            $("header").removeClass("active");
+        }
+        $(window).on("resize", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+        });
+    });
+</script>
